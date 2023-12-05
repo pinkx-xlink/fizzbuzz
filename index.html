@@ -22,13 +22,25 @@
     const input = document.querySelector('.numberInput');
     const para = document.querySelector('p');
 
+    input.addEventListener("change", () => {
+        const num = parseFloat(input.value);
+        let x = num + 1;
+        if (x % 3 == 0) return("fizz!");
+        if (x % 5 == 0) return("buzz!");
+        if (x % 3 == 0 && x % 5 == 0) return("FIZZBUZZ!");
+  }
+});
+
+
     function showNumbers() {
         
     }
     // take input from user 
     // print numbers up to that number
     //stop printing # once it reaches user's input # 
+    
     // print fizz for multiples of 3
+
     // print buzz for mult of 5
     // print fizzbuzz for mult of 3 and 5
 
