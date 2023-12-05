@@ -25,12 +25,17 @@
     input.addEventListener("change", () => {
         const num = parseFloat(input.value);
         let x = num + 1;
-        if (x % 3 == 0) return("fizz!");
-        if (x % 5 == 0) return("buzz!");
-        if (x % 3 == 0 && x % 5 == 0) return("FIZZBUZZ!");
+        if (x % 3 == 0) {
+            return ("fizz!");
+        } else if (x % 5 == 0) {
+            return ("buzz!");
+        } else if (x % 3 == 0 && x % 5 == 0) {
+            return ("FIZZBUZZ!");
+        } 
         while (num > x) {
             x++;
         }
+        return num;
   }
 );
 
