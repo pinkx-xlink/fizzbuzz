@@ -26,7 +26,7 @@
         const num = parseFloat(input.value);
         let x = num + 1;
         if (x % 3 == 0) {
-            return ("fizz!");
+            console.log("fizz!");
         } else if (x % 5 == 0) {
             return ("buzz!");
         } else if (x % 3 == 0 && x % 5 == 0) {
@@ -34,10 +34,11 @@
         } 
         while (num > x) {
             x++;
+            return x;
         }
-        return num;
-  }
-);
+        
+        }
+    );
 
 
     function showNumbers() {
