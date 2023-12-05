@@ -16,13 +16,14 @@
     
     <input class="numberInput" type="text">
     <p></p>
+    <button id="submit">okay!</button>
     
 </body>
 <script>
     const input = document.querySelector('.numberInput');
     const para = document.querySelector('p');
 
-    input.addEventListener("change", () => {
+    input.addEventListener("#submit", () => {
         const num = parseFloat(input.value);
         let x = num + 1;
         if (x % 3 == 0) {
@@ -42,7 +43,7 @@
 
 
     function showNumbers() {
-        
+        alert(x);
     }
     // take input from user 
     // print numbers up to that number
