@@ -18,25 +18,19 @@
 <script>
 
     let answer = parseInt(prompt("Please enter a number: "));
-    for(let i = 1; i =< answer; i++);
-    console.log(i);
     
-        if (x % 3 == 0) {
-            console.log("fizz!");
+    for(let i = 1; i =< answer; i++);
+        if(i % 3 == 0 && i % 5 == 0) {
+            return "FizzBuzz!";
+        } else if (x % 3 == 0) {
+            return "Fizz";
         } else if (i % 5 == 0) {
-            return ("buzz!");
-        } else if (i % 3 == 0 && i % 5 == 0) {
-            return ("FIZZBUZZ!");
-        } 
-        while (answer > i) {
-            i++;
-            return i;
+            return "buzz";
+        } else {
+            console.log(i);
         }
 
-
-    function showNumbers() {
-        alert(i);
-    }
+    
     // take input from user 
     // print numbers up to that number
     //stop printing # once it reaches user's input # 
